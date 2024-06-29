@@ -28,7 +28,7 @@ end
 
 function GetSticker(card)
     if(card.sticker) then return card.sticker end
-        local center = GetCenterKeyByJokerName(card.ability.name)
+        local center = card.config.center
         local sticker = get_joker_win_sticker(center)
         return sticker
 end
